@@ -1,12 +1,12 @@
 import { CustomerReviews, Footer, Hero, PopularProducts, Services, SpecialOffer, Subscribe, SuperQuality } from '@/components/sections'
-import Nav from '@/components/ui/Nav'
+import {Nav} from '@/components/ui'
 import Image from 'next/image'
 
 export default function Home() {
   return (
     <main className="relative">
       <Nav />
-      <section className='xl:padding wide:padding-r padding:b'>
+      <section className='xl:padding-l wide:padding-r padding:b'>
         <Hero />
       </section>
       <section className='padding'>

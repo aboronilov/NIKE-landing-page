@@ -20,18 +20,26 @@ const Nav = (props: Props) => {
                         />
                     </div>
                 </Link>
-                <ul className='flex flex-1 justify-center items-center gap-16 max-lg:hidden'>
-                    {navLinks.map((item) => (
-                        <Link 
-                            key={item.label} 
-                            href={item.href} 
-                            className='font-montserrat leading-normal text-lg text-slate-gray on-hover cursor-pointer'
-                        >
-                            {item.label}
-                        </Link>
-                    ))}
-                </ul>
-                <h1 className='font-montserrat leading-relaxed text-xl on-hover cursor-pointer'>Login</h1>
+                <div className="flex flex-1 items-center justify-between max-lg:hidden">
+                    <ul className='flex flex-1 justify-center items-center gap-16 '>
+                        {navLinks.map((item) => (
+                            <Link 
+                                key={item.label} 
+                                href={item.href} 
+                                className='font-montserrat leading-normal text-lg text-slate-gray on-hover cursor-pointer'
+                            >
+                                {item.label}
+                            </Link>
+                        ))}
+                    </ul>
+                    <h1 className='font-montserrat leading-relaxed text-xl on-hover cursor-pointer'>Login</h1>
+                </div>
+                <div className="relative w-6 h-6 lg:hidden">
+                    <Image 
+                        alt="hamburger"
+                        src={hamburger}
+                    />
+                </div>
             </nav>
         </header>
     )
