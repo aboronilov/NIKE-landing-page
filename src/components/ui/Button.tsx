@@ -26,6 +26,8 @@ const Button = ({ label, img }: Props) => {
                 hover:shadow-md
                 hover:opacity-80
                 transition
+                duration-300 
+                ease-in-out
             '
         >
             {label}
