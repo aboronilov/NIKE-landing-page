@@ -6,29 +6,40 @@ import { StaticImageData } from "next/image"
 type Props = {
     label: string;
     img?: StaticImageData;
+    backgroundColor?: string;
+    textColor?: string;
+    borderColor?: string;
+    fullWidth?: boolean;
 }
 
-const Button = ({ label, img }: Props) => {
+const Button = ({ label, img, backgroundColor, textColor, borderColor, fullWidth}: Props) => {
     return (
         <button 
-            className='
-                flex 
-                items-center 
-                justify-center 
-                gap-2 px-7 py-4 
-                border border-coral-red
-                font-montserrat 
-                text-lg
-                leading-none
-                bg-coral-red
-                rounded-full
-                text-white
-                hover:shadow-md
-                hover:opacity-80
-                transition
-                duration-300 
-                ease-in-out
-            '
+            className={
+                `
+                    flex 
+                    items-center 
+                    justify-center 
+                    gap-2 px-7 py-4 
+                    border border-coral-red
+                    font-montserrat 
+                    text-lg
+                    leading-none
+                    rounded-full
+                    hover:shadow-md
+                    hover:opacity-80
+                    transition
+                    duration-300 
+                    ease-in-out
+                    ${
+                        backgroundColor ? 
+                        `${backgroundColor} ${textColor} ${borderColor}`
+                            : 
+                        "bg-coral-red text-white border-coral-red"}
+                    ${fullWidth && "w-full"}
+                `
+            }
+
         >
             {label}
             {
