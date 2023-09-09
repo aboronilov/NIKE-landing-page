@@ -1,6 +1,6 @@
-# Modern mobile responsive NIKE UI [here](https://wx-test-task.onrender.com/api) 
+# Modern mobile responsive NIKE UI [here](https://nike-landing-page-two-inky.vercel.app/) 
 
-![Landing page](https://github.com/aboronilov/amazon/blob/master/frontend/public/screenshots/main_page.jpg)
+![Landing page](https://raw.githubusercontent.com/aboronilov/NIKE-landing-page/main/public/screenshots/Screenshot%202023-09-09%20at%2012.36.52.png)
 
 ## Technologies:
 
